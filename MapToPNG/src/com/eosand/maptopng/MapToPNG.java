@@ -10,7 +10,7 @@ public class MapToPNG {
 
 	/*
 	 * Converts map colors text file into a PNG
-	 * Made by Elijah Sanderson
+	 * Made by EOSand
 	 */
 	
 	public static void main(String args[]) throws Exception {
