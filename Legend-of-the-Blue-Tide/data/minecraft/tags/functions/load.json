@@ -1,0 +1,6 @@
+{
+    "values": [
+        "main:particles/load_particles",
+        "main:timer/load"
+    ]
+}
