@@ -10,7 +10,7 @@ execute if entity @a[tag=pr.target,scores={eosand.pipes=3}] run function eosand:
 execute if entity @a[tag=pr.target,scores={eosand.pipes=4}] run function eosand:particles/pad_4
 execute if entity @a[tag=pr.target,scores={eosand.pipes=4}] run function eosand:particles/section_4
 
-# Doors=
+# Doors
 execute as @a[tag=pr.target,scores={eosand.door=1}] run function eosand:doors/door_1
 execute positioned ~-2.5 ~1.0 ~34.5 as @a[tag=pr.target,dx=4,dy=2,dz=3] run execute positioned ~2.5 ~-1.0 ~-34.5 run function eosand:doors/door_1
 
