@@ -231,14 +231,14 @@ execute positioned ~-13 ~2 ~26 as @s[scores={eosand.pipe_num=8},distance=..1.5,x
 # Pipe 9 (purple, end ~-13 ~50 ~26)
 execute positioned ~-13 ~7 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5] run playsound block.end_portal_frame.fill player @s
 execute as @s[scores={eosand.pipe_num=9}] at @s run tp @s ~ ~1 ~
-execute as @s[scores={eosand.pipe_num=9}] run function eosand:colors/yellow
+execute as @s[scores={eosand.pipe_num=9}] run function eosand:colors/red
 
-# Red
-execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
+# Red (correct)
+execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 10
 
-# Yellow (correct)
-execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 10
-execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 10
+# Yellow
+execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
+execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
 
 # Green
 execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -3
@@ -255,343 +255,154 @@ execute positioned ~-13 ~50 ~26 as @s[scores={eosand.pipe_num=9},distance=..1.5,
 
 
 ########################################
-# Pipe 10 (yellow, end ~-13 ~50 ~13)
-execute positioned ~-13 ~50 ~22 as @s[scores={eosand.pipe_num=10},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=10}] at @s run tp @s ~ ~ ~-1
-execute as @s[scores={eosand.pipe_num=10}] run function eosand:colors/red
-
-# Red (correct)
-execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 11
-
-# Yellow
-# execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-# execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-
-# Green
-execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -3
-
-# Pink
-# execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 11
-# execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 11
-
-# Cyan
-execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~-13 ~50 ~13 as @s[scores={eosand.pipe_num=10},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 11 (red, end ~-26 ~50 ~13)
-execute positioned ~-17 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=11}] at @s run tp @s ~-1 ~ ~
-execute as @s[scores={eosand.pipe_num=11}] run function eosand:colors/yellow
+# Pipe 10 (red, end ~-26 ~50 ~26)
+execute positioned ~-17 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5] run playsound block.end_portal_frame.fill player @s
+execute as @s[scores={eosand.pipe_num=10}] at @s run tp @s ~-1 ~ ~
+execute as @s[scores={eosand.pipe_num=10}] run function eosand:colors/yellow
 
 # Red
-# execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
+# execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
 
 # Yellow (correct)
-execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
-execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
+execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 11
+execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 11
 
 # Green
-# execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
+# execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -3
 
 # Pink
-execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
+execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
+execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
 
 # Cyan
-execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
+execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
 
 # Purple
-execute positioned ~-26 ~50 ~13 as @s[scores={eosand.pipe_num=11},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
+execute positioned ~-26 ~50 ~26 as @s[scores={eosand.pipe_num=10},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
 
 
 ########################################
-# Pipe 12 (yellow, end ~-26 ~50 ~-13)
-execute positioned ~-26 ~50 ~9 as @s[scores={eosand.pipe_num=12},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=12}] at @s run tp @s ~ ~ ~-1
-execute as @s[scores={eosand.pipe_num=12}] run function eosand:colors/green
+# Pipe 11 (yellow, end ~-26 ~50 ~-26)
+execute positioned ~-26 ~50 ~22 as @s[scores={eosand.pipe_num=11},distance=..1.5] run playsound block.end_portal_frame.fill player @s
+execute as @s[scores={eosand.pipe_num=11}] at @s run tp @s ~ ~ ~-1
+execute as @s[scores={eosand.pipe_num=11}] run function eosand:colors/green
 
 # Red
-execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
+execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
 
 # Yellow
-# execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
-# execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
+# execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
+# execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
 
 # Green (correct)
-execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
+execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
 
 # Pink
-# execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-# execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
+# execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
+# execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
 
 # Cyan
-execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
+execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
 
 # Purple
-execute positioned ~-26 ~50 ~-13 as @s[scores={eosand.pipe_num=12},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
+execute positioned ~-26 ~50 ~-26 as @s[scores={eosand.pipe_num=11},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
 
 
 ########################################
-# Pipe 13 (green, end ~-13 ~50 ~-13)
-execute positioned -22 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=13}] at @s run tp @s ~1 ~ ~
-execute as @s[scores={eosand.pipe_num=13}] run function eosand:colors/yellow
+# Pipe 12 (green, end ~26 ~50 ~-26)
+execute positioned -22 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5] run playsound block.end_portal_frame.fill player @s
+execute as @s[scores={eosand.pipe_num=12}] at @s run tp @s ~1 ~ ~
+execute as @s[scores={eosand.pipe_num=12}] run function eosand:colors/pink
 
 # Red
-# execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
-
-# Yellow (correct)
-execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 14
-execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 14
-
-# Green
-# execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
-
-# Pink
-execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-
-# Cyan
-execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~-13 ~50 ~-13 as @s[scores={eosand.pipe_num=13},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 14 (yellow, end ~-13 ~50 ~-26)
-execute positioned ~-13 ~50 ~-17 as @s[scores={eosand.pipe_num=14},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=14}] at @s run tp @s ~ ~ ~-1
-execute as @s[scores={eosand.pipe_num=14}] run function eosand:colors/green
-
-# Red
-execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
+# execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
 
 # Yellow
-# execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
-# execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
-
-# Green (correct)
-execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 15
-
-# Pink
-# execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-# execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-
-# Cyan
-execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~-13 ~50 ~-26 as @s[scores={eosand.pipe_num=14},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 15 (green, end ~13 ~50 ~-26)
-execute positioned -9 ~-50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=15}] at @s run tp @s ~1 ~ ~
-execute as @s[scores={eosand.pipe_num=15}] run function eosand:colors/pink
-
-# Red
-# execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
-
-# Yellow
-execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
+execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
+execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
 
 # Green
-# execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
+# execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
 
 # Pink (correct)
-execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 16
-execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 16
+execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
+execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
 
 # Cyan
-execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
+execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
 
 # Purple
-execute positioned ~13 ~50 ~-26 as @s[scores={eosand.pipe_num=15},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
+execute positioned ~26 ~50 ~-26 as @s[scores={eosand.pipe_num=12},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
 
 
 ########################################
-# Pipe 16 (pink, end ~13 ~50 ~-13)
-execute positioned ~13 ~50 ~-22 as @s[scores={eosand.pipe_num=16},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=16}] at @s run tp @s ~ ~ ~1
-execute as @s[scores={eosand.pipe_num=16}] run function eosand:colors/green
+# Pipe 13 (pink, end ~26 ~50 ~26)
+execute positioned ~26 ~50 ~-22 as @s[scores={eosand.pipe_num=13},distance=..1.5] run playsound block.end_portal_frame.fill player @s
+execute as @s[scores={eosand.pipe_num=13}] at @s run tp @s ~ ~ ~1
+execute as @s[scores={eosand.pipe_num=13}] run function eosand:colors/red
 
-
-# Red
-execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
-
-# Yellow
-# execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-# execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-
-# Green (correct)
-execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 17
-
-# Pink
-# execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
-# execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
-
-# Cyan
-execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~13 ~50 ~-13 as @s[scores={eosand.pipe_num=16},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 17 (green, end ~26 ~50 ~-13)
-execute positioned -17 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=17}] at @s run tp @s ~1 ~ ~
-execute as @s[scores={eosand.pipe_num=17}] run function eosand:colors/pink
-
-# Red
-# execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
-
-# Yellow
-execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-
-# Green
-# execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 13
-
-# Pink (correct)
-execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 18
-execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 18
-
-# Cyan
-execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~26 ~50 ~-13 as @s[scores={eosand.pipe_num=17},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 18 (pink, end ~26 ~50 ~13)
-execute positioned ~26 ~50 ~-9 as @s[scores={eosand.pipe_num=18},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=18}] at @s run tp @s ~ ~ ~1
-execute as @s[scores={eosand.pipe_num=18}] run function eosand:colors/red
 
 # Red (correct)
-execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 19
+execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 14
 
 # Yellow
-# execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-# execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
+# execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
+# execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
 
 # Green
-execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -3
+execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -3
 
 # Pink
-# execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
-# execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
+# execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
+# execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
 
 # Cyan
-execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
+execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
 
 # Purple
-execute positioned ~26 ~50 ~13 as @s[scores={eosand.pipe_num=18},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
+execute positioned ~26 ~50 ~26 as @s[scores={eosand.pipe_num=13},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
 
 
 ########################################
-# Pipe 19 (red, end ~13 ~50 ~13)
-execute positioned ~22 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=19}] at @s run tp @s ~-1 ~ ~
-execute as @s[scores={eosand.pipe_num=19}] run function eosand:colors/pink
+# Pipe 14 (red, end ~ ~50 ~26)
+execute positioned ~22 ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5] run playsound block.end_portal_frame.fill player @s
+execute as @s[scores={eosand.pipe_num=14}] at @s run tp @s ~-1 ~ ~
+execute as @s[scores={eosand.pipe_num=14}] run function eosand:colors/yellow
 
 # Red
-# execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
-
-# Yellow
-execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-
-# Green
-# execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
-
-# Pink (correct)
-execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 20
-execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 20
-
-# Cyan
-execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~13 ~50 ~13 as @s[scores={eosand.pipe_num=19},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 20 (pink, end ~13 ~50 ~26)
-execute positioned ~13 ~50 ~17 as @s[scores={eosand.pipe_num=20},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=20}] at @s run tp @s ~ ~ ~1
-execute as @s[scores={eosand.pipe_num=20}] run function eosand:colors/red
-
-# Red (correct)
-execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 21
-
-# Yellow
-# execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-# execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -2
-
-# Green
-execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -3
-
-# Pink
-# execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
-# execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 7
-
-# Cyan
-execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
-
-# Purple
-execute positioned ~13 ~50 ~26 as @s[scores={eosand.pipe_num=20},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
-
-
-########################################
-# Pipe 21 (red, end ~ ~50 ~26)
-execute positioned ~9 ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=21}] at @s run tp @s ~-1 ~ ~
-execute as @s[scores={eosand.pipe_num=21}] run function eosand:colors/yellow
-
-# Red
-# execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
+# execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=45..135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -1
 
 # Yellow (correct)
-execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 22
-execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 22
+execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=135..180,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 15
+execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=-180..-135,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 15
 
 # Green
-# execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
+# execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=-135..-45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num 12
 
 # Pink
-execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
-execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
+execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=-45..0,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
+execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,y_rotation=0..45,x_rotation=-45..45] run scoreboard players set @s eosand.pipe_num -4
 
 # Cyan
-execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
+execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,x_rotation=45..90] run scoreboard players set @s eosand.pipe_num -5
 
 # Purple
-execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=21},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
+execute positioned ~ ~50 ~26 as @s[scores={eosand.pipe_num=14},distance=..1.5,x_rotation=-90..-45] run scoreboard players set @s eosand.pipe_num -6
 
 
 ########################################
-# Pipe 22 (yellow, last)
-execute positioned ~ ~50 ~22 as @s[scores={eosand.pipe_num=22},distance=..1.5] run playsound block.end_portal_frame.fill player @s
-execute as @s[scores={eosand.pipe_num=22}] at @s run tp @s ~ ~ ~-1
-execute as @s[scores={eosand.pipe_num=22}] run function eosand:colors/gold
+# Pipe 15 (yellow, last)
+execute positioned ~ ~50 ~22 as @s[scores={eosand.pipe_num=15},distance=..1.5] run playsound block.end_portal_frame.fill player @s
+execute as @s[scores={eosand.pipe_num=15}] at @s run tp @s ~ ~ ~-1
+execute as @s[scores={eosand.pipe_num=15}] run function eosand:colors/gold
 
 # End (change pipe score, play sound, set eosand.timer to 0, update pipe_num to 0)
-execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=22},distance=..1.5] run bossbar set eosand:section_4 visible false
-execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=22},distance=..1.5] run scoreboard players set @s eosand.pipes 5
-execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=22},distance=..1.5] at @s run playsound entity.player.levelup player @s
-execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=22},distance=..1.5] run scoreboard players set @s eosand.timer 0
-execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=22},distance=..1.5] run function eosand:colors/none
-execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=22},distance=..1.5] run scoreboard players set @s eosand.pipe_num 0
+# execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=15},distance=..1.5] run bossbar set eosand:section_4 visible false
+execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=15},distance=..1.5] run scoreboard players set @s eosand.pipes 5
+execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=15},distance=..1.5] at @s run playsound entity.player.levelup player @s
+execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=15},distance=..1.5] run scoreboard players set @s eosand.timer 0
+execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=15},distance=..1.5] run function eosand:colors/none
+execute positioned ~ ~50 ~7 as @s[scores={eosand.pipe_num=15},distance=..1.5] run scoreboard players set @s eosand.pipe_num 0
 
 
 ########################################
